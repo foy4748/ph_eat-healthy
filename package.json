@@ -1,0 +1,14 @@
+{
+  "name": "ph_eat-healthy",
+  "version": "1.0.0",
+  "description": "Programming Hero PH practice problem - Eat Healthy",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

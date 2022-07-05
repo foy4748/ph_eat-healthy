@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.link-button {
+  color: #fff;
+  text-decoration: none;
+  background-image: linear-gradient(#e5bcbc, tomato);
+  padding: 1rem 2rem;
+  border-radius: 1.2rem;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.section {
+  display: flex;
+}
+
+/* For TESTING */
+.section > * {
+  border: 1px solid red;
+}
+
+.rect {
+  display: inline-block;
+  position: absolute;
+  height: 23rem;
+  width: 23rem;
+  background-image: linear-gradient(#f1c1bc, tomato);
+  border-radius: 1.9rem;
+}
+
+.rect1 {
+  transform: rotate(45deg);
+}
+
+.rect2 {
+  transform: rotate(-30deg);
+}
+
+.cover {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.welcome {
+  padding: 4rem;
+  text-align: right;
+}
+
+.welcome > p {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.cover-img {
+  z-index: 1;
+  width: 48%;
+}
+
+.rect1 {
+  animation: rotation 20s infinite linear;
+}
+
+.rect2 {
+  animation: rotationReverse 20s infinite linear;
+}
+
+/* ----------Key Frames---------- */
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes rotationReverse {
+  from {
+    transform: rotate(359deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+/* ----------END of Key Frames---------- */
