@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 h1 {
@@ -14,16 +14,16 @@ h1 {
   padding: 1rem 2rem;
   border-radius: 1.2rem;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 1.5em;
+  box-shadow: 0px 10px 30px 0px #a7ff7b;
 }
 
 .section {
   display: flex;
 }
 
-/* For TESTING */
-.section > * {
-  border: 1px solid red;
+.section1 {
+  background-image: linear-gradient(#a5ff77, white);
 }
 
 .rect {
@@ -64,9 +64,16 @@ h1 {
   margin-bottom: 3rem;
 }
 
+.about > p {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  text-align: justify;
+  padding-right: 4rem;
+}
+
 .cover-img {
   z-index: 1;
-  width: 48%;
+  width: 60%;
 }
 
 .rect1 {
@@ -75,6 +82,27 @@ h1 {
 
 .rect2 {
   animation: rotationReverse 20s infinite linear;
+}
+
+.section2 {
+  margin-top: 6rem;
+}
+
+.about-cover > img {
+  width: 40px;
+}
+
+.circle {
+  display: inline-block;
+  position: absolute;
+  border-radius: 100%;
+  height: 25rem;
+  width: 25rem;
+  background-image: linear-gradient(#f1c1bc, salmon);
+  top: -3rem;
+  left: 7.5rem;
+
+  animation: rotation 5s infinite linear;
 }
 
 /* ----------Key Frames---------- */
